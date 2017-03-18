@@ -3,5 +3,9 @@
 	border: 1px solid #ffe600;
 	padding: 25px 85px;
 	margin: 0 auto 50px;
+	@media screen and (max-width: 768px) {
+		padding: 15px 50px;
+		margin-bottom: 30px;
+	}
 	cursor: pointer;
 }

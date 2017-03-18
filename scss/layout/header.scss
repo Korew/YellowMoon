@@ -1,0 +1,68 @@
+.navbar {
+	padding: 35px 0;
+	border-bottom: 1px solid #ffe600;
+	margin-bottom: 120px;
+	&:after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+
+	&-brand {
+		display: inline-block;
+		width: 186px;
+
+		img {
+			display: inline-block;
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	&-nav {
+		float: right;
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+		> li {
+			display: inline-block;
+			margin-right: 25px;
+			padding: 15px 20px;
+			@media screen and (max-width: 990px) {
+				margin-right: 5px;
+				padding: 10px 15px;
+			}
+			border: 1px solid #fff;
+			cursor: pointer;
+			color: $textgrey;
+			font-weight: 400;
+			&:last-child {
+				margin-right: 0;
+			}
+			&:hover {
+				border-color: #ffe600;
+				color: $textblack;
+			}
+		}
+		.active {
+			border-color: #ffe600;
+			color: $textblack;
+			cursor: default;
+		}
+	}
+	&-item {
+	}
+	&-toggler {
+
+	}
+}
+
+.fixed {
+	position: fixed;
+	display: block;
+	width: 100%;
+	margin-bottom: 120px;
+	top: 0;
+	left: 0;
+	background-color: #fff;
+}

@@ -4,13 +4,14 @@ h1 {
 	margin-bottom: 115px;
 	@media screen and (max-width: 768px) {
 		font-size: 30px;
-		margin-bottom: 55px;
+		margin-bottom: 35px;
 
 	}
 }
 
 .wrapper {
 	max-width: 1920px;
+	margin: 0 auto;
 }
 
 .container {
@@ -74,8 +75,11 @@ h1 {
 	&-big-padding {
 		padding: 250px 0;
 		@media screen and (max-width: 768px) {
-			padding: 120px 0;
+			padding: 90px 0;
 		}
+	}
+	&-no-padding {
+		padding: 0;
 	}
 	&-no-margin-bottom {
 		margin-bottom: 0;		
@@ -119,6 +123,10 @@ h1 {
 .logo-sign-holder {
 	width: 89px;
 	margin: 0 auto 56px;
+	@media screen and (max-width: 768px) {
+		margin-bottom: 30px;
+		}
+
 	img {
 		display: inline-block;
 		width: 100%;

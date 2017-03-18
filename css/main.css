@@ -8,6 +8,61 @@ body {
   padding: 25px 85px;
   margin: 0 auto 50px;
   cursor: pointer; }
+  @media screen and (max-width: 768px) {
+    .button-explore {
+      padding: 15px 50px;
+      margin-bottom: 30px; } }
+
+.navbar {
+  padding: 35px 0;
+  border-bottom: 1px solid #ffe600;
+  margin-bottom: 120px; }
+  .navbar:after {
+    content: '';
+    display: block;
+    clear: both; }
+  .navbar-brand {
+    display: inline-block;
+    width: 186px; }
+    .navbar-brand img {
+      display: inline-block;
+      width: 100%;
+      height: auto; }
+  .navbar-nav {
+    float: right;
+    list-style-type: none;
+    padding: 0;
+    margin: 0; }
+    .navbar-nav > li {
+      display: inline-block;
+      margin-right: 25px;
+      padding: 15px 20px;
+      border: 1px solid #fff;
+      cursor: pointer;
+      color: #8e8e8e;
+      font-weight: 400; }
+      @media screen and (max-width: 990px) {
+        .navbar-nav > li {
+          margin-right: 5px;
+          padding: 10px 15px; } }
+      .navbar-nav > li:last-child {
+        margin-right: 0; }
+      .navbar-nav > li:hover {
+        border-color: #ffe600;
+        color: #131316; }
+    .navbar-nav .active {
+      border-color: #ffe600;
+      color: #131316;
+      cursor: default; }
+
+.fixed {
+  position: fixed;
+  display: block;
+  width: 100%;
+  margin-bottom: 120px;
+  top: 0;
+  left: 0;
+  background-color: #fff; }
 
 h1 {
   font-size: 40px;
@@ -16,10 +71,11 @@ h1 {
   @media screen and (max-width: 768px) {
     h1 {
       font-size: 30px;
-      margin-bottom: 55px; } }
+      margin-bottom: 35px; } }
 
 .wrapper {
-  max-width: 1920px; }
+  max-width: 1920px;
+  margin: 0 auto; }
 
 .container {
   max-width: 1170px;
@@ -71,7 +127,9 @@ h1 {
     padding: 250px 0; }
     @media screen and (max-width: 768px) {
       .block-big-padding {
-        padding: 120px 0; } }
+        padding: 90px 0; } }
+  .block-no-padding {
+    padding: 0; }
   .block-no-margin-bottom {
     margin-bottom: 0; }
   .block-margin-bottom-52 {
@@ -101,6 +159,9 @@ h1 {
 .logo-sign-holder {
   width: 89px;
   margin: 0 auto 56px; }
+  @media screen and (max-width: 768px) {
+    .logo-sign-holder {
+      margin-bottom: 30px; } }
   .logo-sign-holder img {
     display: inline-block;
     width: 100%;

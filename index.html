@@ -12,7 +12,7 @@
 </head>
 <body>
 	<div class="wrapper">
-		<section class="block-fill-height bg-lightgrey text-center">
+		<section id="home" class="block-fill-height bg-lightgrey text-center">
 			<div class="block-inner">
 				<div class="container">
 					<div class="logo-sign-holder"><img src="images/logo-sign.png" alt="YellowMoon"></div>
@@ -23,8 +23,20 @@
 				</div>
 			</div>
 		</section>
-		<section id="about" class="block bg-white">
+		<section id="about" class="block bg-white block-no-padding">
+				<nav class="navbar">
 			<div class="container">
+					<div class="navbar-brand"><img src="images/logo.png" alt="YellowMoon"></div>
+					<ul class="navbar-nav">
+						<li class="navbar-item" target="home">Home</li>
+						<li class="navbar-item active" target="about">About us</li>
+						<li class="navbar-item" target="portfolio">Portfolio</li>
+						<li class="navbar-item" target="clients">Clients</li>
+						<li class="navbar-item" target="contact">Contact</li>
+					</ul>
+					</div>
+				</nav>
+				<div class="container">
 				<div class="block-heading text-normal text-center text-black text-uppercase">About us</div>
 				<div class="block-description text-normal text-center text-yellow text-uppercase">Yellow side of the moon is not secret anymore</div>
 			</div>
@@ -35,19 +47,19 @@
 				<div class="block-description block-no-margin-bottom text-center text-normal text-white text-uppercase">No... We are not lazy, every website need blank space</div>
 			</div>
 		</section>
-		<section class="block bg-white">
+		<section id="portfolio" class="block bg-white">
 			<div class="container">
 				<div class="block-heading text-center text-normal text-uppercase text-black">Portfolio</div>
 				<div class="block-description text-center text-normal text-uppercase text-yellow">When we are bored we make some of these</div>
 			</div>
 		</section>
-		<section class="block bg-grey">
+		<section id="clients" class="block bg-grey">
 			<div class="container">
 				<div class="block-heading text-center text-normal text-uppercase text-white">Clients</div>
 				<div class="block-description text-center text-normal text-uppercase text-yellow">Somebody actually pay su for these stuff</div>
 			</div>
 		</section>
-		<section class="block bg-white">
+		<section id="contact" class="block bg-white">
 			<div class="container">
 				<div class="block-heading text-center text-normal text-uppercase text-black">Contact us</div>
 				<div class="block-description text-center text-normal text-uppercase text-yellow">Sure... We can take some time for chat</div>
