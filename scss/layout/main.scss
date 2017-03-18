@@ -1,0 +1,138 @@
+h1 {
+	font-size: 40px;
+	font-weight: 300;
+	margin-bottom: 115px;
+	@media screen and (max-width: 768px) {
+		font-size: 30px;
+		margin-bottom: 55px;
+
+	}
+}
+
+.wrapper {
+	max-width: 1920px;
+}
+
+.container {
+	max-width: 1170px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+.bg {
+	&-white {
+		background-color: $bgwhite;
+	}
+	&-yellow {
+		background-color: $bgyellow;		
+	}
+	&-grey {
+		background-color: $bggrey;		
+	}
+	&-lightgrey {
+		background-color: $bglightgrey;		
+	}
+	&-black {
+		background-color: $bgblack;		
+	}
+}
+
+.block {
+	padding: 120px 0;
+	@media screen and (max-width: 768px) {
+		padding: 60px 0;
+	}
+
+	&-fill-height {
+		height: 100vh;
+		display: table;
+		width: 100%;
+	}
+	&-heading {
+		font-size: 25px;
+		margin-bottom: 34px;
+	}
+	&-description {
+		font-size: 15px;
+		margin-bottom: 120px;
+	}
+	&-header {
+		height: 1%;
+		display: table-header-group;
+	}
+	&-body {
+		display: table-row-group;
+	}
+	&-footer {
+		display: table-footer-group;
+	}
+	&-inner {
+		padding: 10px 0;
+		display: table-cell;
+		vertical-align: middle;
+	}
+	&-big-padding {
+		padding: 250px 0;
+		@media screen and (max-width: 768px) {
+			padding: 120px 0;
+		}
+	}
+	&-no-margin-bottom {
+		margin-bottom: 0;		
+	}
+	&-margin-bottom-52 {
+		margin-bottom: 52px;		
+	}
+}
+
+.text {
+	line-height: 1.8;
+	&-center {
+		text-align: center;		
+	}
+	&-uppercase {
+		text-transform: uppercase;	
+	}
+	&-yellow {
+		color: $textyellow;
+	}
+	&-black {
+		color: $textblack;
+	}
+	&-white {
+		color: $textwhite;
+	}
+	&-grey {
+		color: $textgrey;
+	}
+	&-italic {
+		font-style: italic;
+	}
+	&-normal {
+		font-weight: 400;
+	}
+	&-light {
+		font-weight: 300;
+	}
+}
+
+.logo-sign-holder {
+	width: 89px;
+	margin: 0 auto 56px;
+	img {
+		display: inline-block;
+		width: 100%;
+		height: auto;
+	}
+}
+
+.arrow-down {
+	width: 38px;
+	margin: 0 auto;
+	img {
+		display: inline-block;
+		width: 100%;
+		height: auto;
+		cursor: pointer;
+	}
+}

@@ -1,0 +1,125 @@
+/*colors*/
+body {
+  font-family: 'Roboto', sans-serif; }
+
+.button-explore {
+  display: inline-block;
+  border: 1px solid #ffe600;
+  padding: 25px 85px;
+  margin: 0 auto 50px;
+  cursor: pointer; }
+
+h1 {
+  font-size: 40px;
+  font-weight: 300;
+  margin-bottom: 115px; }
+  @media screen and (max-width: 768px) {
+    h1 {
+      font-size: 30px;
+      margin-bottom: 55px; } }
+
+.wrapper {
+  max-width: 1920px; }
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 10px; }
+
+.bg-white {
+  background-color: #ffffff; }
+
+.bg-yellow {
+  background-color: #ffeb33; }
+
+.bg-grey {
+  background-color: #424245; }
+
+.bg-lightgrey {
+  background-color: #89898b; }
+
+.bg-black {
+  background-color: #131316; }
+
+.block {
+  padding: 120px 0; }
+  @media screen and (max-width: 768px) {
+    .block {
+      padding: 60px 0; } }
+  .block-fill-height {
+    height: 100vh;
+    display: table;
+    width: 100%; }
+  .block-heading {
+    font-size: 25px;
+    margin-bottom: 34px; }
+  .block-description {
+    font-size: 15px;
+    margin-bottom: 120px; }
+  .block-header {
+    height: 1%;
+    display: table-header-group; }
+  .block-body {
+    display: table-row-group; }
+  .block-footer {
+    display: table-footer-group; }
+  .block-inner {
+    padding: 10px 0;
+    display: table-cell;
+    vertical-align: middle; }
+  .block-big-padding {
+    padding: 250px 0; }
+    @media screen and (max-width: 768px) {
+      .block-big-padding {
+        padding: 120px 0; } }
+  .block-no-margin-bottom {
+    margin-bottom: 0; }
+  .block-margin-bottom-52 {
+    margin-bottom: 52px; }
+
+.text {
+  line-height: 1.8; }
+  .text-center {
+    text-align: center; }
+  .text-uppercase {
+    text-transform: uppercase; }
+  .text-yellow {
+    color: #ffe600; }
+  .text-black {
+    color: #131316; }
+  .text-white {
+    color: #fff; }
+  .text-grey {
+    color: #8e8e8e; }
+  .text-italic {
+    font-style: italic; }
+  .text-normal {
+    font-weight: 400; }
+  .text-light {
+    font-weight: 300; }
+
+.logo-sign-holder {
+  width: 89px;
+  margin: 0 auto 56px; }
+  .logo-sign-holder img {
+    display: inline-block;
+    width: 100%;
+    height: auto; }
+
+.arrow-down {
+  width: 38px;
+  margin: 0 auto; }
+  .arrow-down img {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    cursor: pointer; }
+
+.footer {
+  background-color: #131316;
+  padding: 41px 0; }
+  .footer p {
+    color: #ffe600;
+    font-size: 13px; }
+  .footer .socialicons-holder {
+    float: right; }
