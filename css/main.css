@@ -15,8 +15,12 @@ body {
 
 .navbar {
   padding: 35px 0;
+  position: relative;
   border-bottom: 1px solid #ffe600;
   margin-bottom: 120px; }
+  @media screen and (max-width: 768px) {
+    .navbar {
+      padding: 20px 0; } }
   .navbar:after {
     content: '';
     display: block;
@@ -31,10 +35,10 @@ body {
   .navbar-nav {
     float: right;
     list-style-type: none;
-    padding: 0;
-    margin: 0; }
+    padding: 0; }
     .navbar-nav > li {
       display: inline-block;
+      vertical-align: top;
       margin-right: 25px;
       padding: 15px 20px;
       border: 1px solid #fff;

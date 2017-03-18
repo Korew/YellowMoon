@@ -1,5 +1,9 @@
 .navbar {
 	padding: 35px 0;
+	@media screen and (max-width: 768px) {
+		padding: 20px 0;
+	}
+	position: relative;
 	border-bottom: 1px solid #ffe600;
 	margin-bottom: 120px;
 	&:after {
@@ -23,9 +27,13 @@
 		float: right;
 		list-style-type: none;
 		padding: 0;
-		margin: 0;
+		// margin: 0;
+		// @media screen and (max-width: 768px) {
+		// 	display: none;
+		// }
 		> li {
 			display: inline-block;
+			vertical-align: top;
 			margin-right: 25px;
 			padding: 15px 20px;
 			@media screen and (max-width: 990px) {
