@@ -46,6 +46,10 @@
 				margin-right: 0;
 			}
 			&:hover {
+				border-color: #fff;
+				color: $textgrey;
+			}
+			&:focus {
 				border-color: #ffe600;
 				color: $textblack;
 			}

@@ -50,6 +50,9 @@ body {
       .navbar-nav > li:last-child {
         margin-right: 0; }
       .navbar-nav > li:hover {
+        border-color: #fff;
+        color: #8e8e8e; }
+      .navbar-nav > li:focus {
         border-color: #ffe600;
         color: #131316; }
     .navbar-nav .active {
