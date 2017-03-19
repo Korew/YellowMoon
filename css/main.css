@@ -223,6 +223,10 @@ h1 {
     .client {
       width: 33.33%;
       margin-bottom: 40px; } }
+  @media screen and (max-width: 480px) {
+    .client {
+      width: 50%;
+      margin-bottom: 40px; } }
 
 .footer {
   background-color: #131316;
