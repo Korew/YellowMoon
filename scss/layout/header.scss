@@ -22,6 +22,7 @@
 	}
 
 	&-nav {
+		margin: 0;
 		float: right;
 		list-style-type: none;
 		padding: 0;
@@ -46,12 +47,12 @@
 				margin-right: 0;
 			}
 			&:hover {
-				border-color: #fff;
-				color: $textgrey;
-			}
-			&:focus {
 				border-color: #ffe600;
 				color: $textblack;
+			}
+			&:focus {
+				border-color: #fff;
+				color: $textgrey;
 			}
 		}
 		.active {

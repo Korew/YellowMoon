@@ -31,6 +31,7 @@ body {
       width: 100%;
       height: auto; }
   .navbar-nav {
+    margin: 0;
     float: right;
     list-style-type: none;
     padding: 0; }
@@ -50,11 +51,11 @@ body {
       .navbar-nav > li:last-child {
         margin-right: 0; }
       .navbar-nav > li:hover {
-        border-color: #fff;
-        color: #8e8e8e; }
-      .navbar-nav > li:focus {
         border-color: #ffe600;
         color: #131316; }
+      .navbar-nav > li:focus {
+        border-color: #fff;
+        color: #8e8e8e; }
     .navbar-nav .active {
       border-color: #ffe600;
       color: #131316;
