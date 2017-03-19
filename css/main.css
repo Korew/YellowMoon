@@ -13,6 +13,24 @@ body {
       padding: 15px 50px;
       margin-bottom: 30px; } }
 
+.form {
+  border: none;
+  background-color: #ffe600;
+  width: 100%;
+  color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  font-size: 1rem; }
+  .form-holder {
+    max-width: 970px;
+    margin: 0 auto;
+    font-size: 0; }
+  .form-name, .form-mail {
+    width: calc(50% - 10px);
+    display: inline-block; }
+  .form-name {
+    margin-right: 20px; }
+
 .navbar {
   padding: 35px 0;
   border-bottom: 1px solid #ffe600; }
