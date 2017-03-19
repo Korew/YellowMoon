@@ -1,10 +1,27 @@
+::-webkit-input-placeholder {
+	color: #fff;
+	font-size: 15px;
+}
+::-moz-placeholder { /* Firefox 19+ */
+	color: #fff;
+	font-size: 15px;
+}
+:-ms-input-placeholder {
+	color: #fff;
+	font-size: 15px;
+}
+:-moz-placeholder { /* Firefox 18- */
+	color: #fff;
+	font-size: 15px;
+}
+
+
 .form {
+	box-sizing: border-box;
 	border: none;
 	background-color: #ffe600;
 	width: 100%;
-	color: white;
 	padding: 20px;
-	margin-bottom: 20px;
 	font-size: 1rem;
 
 	&-holder {
@@ -13,12 +30,42 @@
 		font-size: 0;
 	}
 
-	&-name, &-mail {
-		width: calc(50% - 10px);
+	&-name {
+		box-sizing: border-box;
 		display: inline-block;
+		width: 50%;
+		padding-right: 10px;
+		margin-bottom: 20px;
 	}
 
-	&-name {
-		margin-right: 20px;
+	&-mail {
+		box-sizing: border-box;
+		display: inline-block;
+		width: 50%;
+		padding-left: 10px;
+		margin-bottom: 20px;
+	}
+
+	&-subject {
+		margin-bottom: 20px;
+	}
+
+	&-text {
+		margin-bottom: 20px;
+	}
+
+	&-submit {
+
+		background-color: #131316;
+		color: $textyellow;
+		font-size: 20px;
+		text-transform: uppercase;
+		cursor: pointer;
+		transition: 0.5s;
+
+		&:hover {
+			color: $textwhite;
+			transition: 0.5s;
+		}
 	}
 }

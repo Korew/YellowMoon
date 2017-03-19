@@ -13,23 +13,61 @@ body {
       padding: 15px 50px;
       margin-bottom: 30px; } }
 
+::-webkit-input-placeholder {
+  color: #fff;
+  font-size: 15px; }
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #fff;
+  font-size: 15px; }
+
+:-ms-input-placeholder {
+  color: #fff;
+  font-size: 15px; }
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #fff;
+  font-size: 15px; }
+
 .form {
+  box-sizing: border-box;
   border: none;
   background-color: #ffe600;
   width: 100%;
-  color: white;
   padding: 20px;
-  margin-bottom: 20px;
   font-size: 1rem; }
   .form-holder {
     max-width: 970px;
     margin: 0 auto;
     font-size: 0; }
-  .form-name, .form-mail {
-    width: calc(50% - 10px);
-    display: inline-block; }
   .form-name {
-    margin-right: 20px; }
+    box-sizing: border-box;
+    display: inline-block;
+    width: 50%;
+    padding-right: 10px;
+    margin-bottom: 20px; }
+  .form-mail {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 50%;
+    padding-left: 10px;
+    margin-bottom: 20px; }
+  .form-subject {
+    margin-bottom: 20px; }
+  .form-text {
+    margin-bottom: 20px; }
+  .form-submit {
+    background-color: #131316;
+    color: #ffe600;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.5s; }
+    .form-submit:hover {
+      color: #fff;
+      transition: 0.5s; }
 
 .navbar {
   padding: 35px 0;
