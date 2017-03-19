@@ -21,39 +21,30 @@ $(function () {
 		$('body').animate({
 			scrollTop: $('#home').offset().top
 		}, 800);
-		$('.navbar-item').removeClass('active');
 	})
 
 	$('.navbar-item[target="about"]').click(function() {
 		$('body').animate({
 			scrollTop: $('#about').offset().top + 1 - navbarHeight
 		}, 800);
-		$('.navbar-item').removeClass('active');
-		$('.navbar-item[target="about"]').addClass('active');
 	})
 
 	$('.navbar-item[target="portfolio"]').click(function() {
 		$('body').animate({
 			scrollTop: $('#portfolio').offset().top + 1 - navbarHeight
 		}, 800);
-		$('.navbar-item').removeClass('active');
-		$('.navbar-item[target="portfolio"]').addClass('active');
 	})
 
 	$('.navbar-item[target="clients"]').click(function() {
 		$('body').animate({
 			scrollTop: $('#clients').offset().top + 1 - navbarHeight
 		}, 800);
-		$('.navbar-item').removeClass('active');
-		$('.navbar-item[target="clients"]').addClass('active');
 	})
 
 	$('.navbar-item[target="contact"]').click(function() {
 		$('body').animate({
 			scrollTop: $('#contact').offset().top + 1 - navbarHeight
 		}, 800);
-		$('.navbar-item').removeClass('active');
-		$('.navbar-item[target="contact"]').addClass('active');
 	})
 
 	/* Fixed navigation */
