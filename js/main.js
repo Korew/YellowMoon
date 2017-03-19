@@ -3,33 +3,30 @@ $(function () {
 		$('.navbar-item').removeClass('active');
 		$('.navbar-item[target="about"]').addClass('active');
 		$('body').animate({
-			scrollTop: $("#about").offset().top + 1
+			scrollTop: $("#navigation").offset().top + 1
 		}, 800);
 	})
 	$('.button-explore').click(function() {
 		$('.navbar-item').removeClass('active');
 		$('.navbar-item[target="about"]').addClass('active');
 		$('body').animate({
-			scrollTop: $("#about").offset().top + 1
+			scrollTop: $("#navigation").offset().top + 1
 		}, 800);
 	})
 
 	var navbarHeight = $('.navbar').outerHeight();
-	console.log(navbarHeight);
 
 
 	$('.navbar-item[target="home"]').click(function() {
 		$('body').animate({
-			scrollTop: $('#home').offset().top + 1
+			scrollTop: $('#home').offset().top
 		}, 800);
 		$('.navbar-item').removeClass('active');
-		$('.navbar-item[target="home"]').addClass('active');
 	})
 
 	$('.navbar-item[target="about"]').click(function() {
-		$('.navbar').removeClass('fixed');
 		$('body').animate({
-			scrollTop: $('#about').offset().top + 1
+			scrollTop: $('#about').offset().top + 1 - navbarHeight
 		}, 800);
 		$('.navbar-item').removeClass('active');
 		$('.navbar-item[target="about"]').addClass('active');
@@ -59,22 +56,42 @@ $(function () {
 		$('.navbar-item[target="contact"]').addClass('active');
 	})
 
-	var stickyOffset = $('#about').offset().top;
+	/* Fixed navigation */
+	var stickyOffset = $('#navigation').offset().top + 1;
+	$(window).scroll(function() {
 
-	$(window).scroll(function(){
-		var sticky = $('.navbar'),
-		scroll = $(window).scrollTop();
-
-		if (scroll >= stickyOffset) {
-			sticky.addClass('fixed');
-			$('#about .block-heading').css('margin-top', navbarHeight + 120);
+		if ($(window).scrollTop() >= stickyOffset) {
+			$('#navigation').addClass('fixed');
+			$('#about').css('margin-top', navbarHeight);
 		} else {
-			sticky.removeClass('fixed');
-			$('#about .block-heading').css('margin-top', 0);
+			$('#navigation').removeClass('fixed');
+			$('#about').css('margin-top', 0);
 		}
 	});
+	/* END fixed navigation */
 
-	$('body').scroll(function() {
-		console.log($('body').offset());
+	/* Add active class on scroll */
+	$(window).scroll(function(){
+		if ($(window).scrollTop() < ($('#about').offset().top - 180)) {
+			$('.navbar-item').removeClass('active');
+			$('.navbar-item[target="home	"]').addClass('active');
+		}
+		if ($(window).scrollTop() > ($('#about').offset().top - 180)) {
+			$('.navbar-item').removeClass('active');
+			$('.navbar-item[target="about"]').addClass('active');
+		}
+		if ($(window).scrollTop() > ($('#portfolio').offset().top - 180)) {
+			$('.navbar-item').removeClass('active');
+			$('.navbar-item[target="portfolio"]').addClass('active');
+		}
+		if ($(window).scrollTop() > ($('#clients').offset().top - 180)) {
+			$('.navbar-item').removeClass('active');
+			$('.navbar-item[target="clients"]').addClass('active');
+		}
+		if ($(window).scrollTop() > ($('#contact').offset().top - 180)) {
+			$('.navbar-item').removeClass('active');
+			$('.navbar-item[target="contact"]').addClass('active');
+		}
 	});
+	/* END Add active class on scroll */
 });

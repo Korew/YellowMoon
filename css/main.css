@@ -15,9 +15,7 @@ body {
 
 .navbar {
   padding: 35px 0;
-  position: relative;
-  border-bottom: 1px solid #ffe600;
-  margin-bottom: 120px; }
+  border-bottom: 1px solid #ffe600; }
   @media screen and (max-width: 768px) {
     .navbar {
       padding: 20px 0; } }
@@ -61,12 +59,9 @@ body {
 
 .fixed {
   position: fixed;
-  display: block;
-  width: 100%;
-  margin-bottom: 120px;
   top: 0;
   left: 0;
-  background-color: #fff; }
+  right: 0; }
 
 h1 {
   font-size: 40px;
