@@ -1,4 +1,11 @@
 $(function () {
+
+	$('.navbar-toggle').on('click', function() {
+		$(this).toggleClass('navbar-toggle-active');
+		$('.navbar-collapse').toggleClass('collapse');
+	})
+
+
 	$('.arrow-down img').click(function() {
 		$('.navbar-item').removeClass('active');
 		$('.navbar-item[target="about"]').addClass('active');
