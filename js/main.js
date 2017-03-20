@@ -86,4 +86,34 @@ $(function () {
 		}
 	});
 	/* END Add active class on scroll */
+
+	var portfolioItemHeight = $('.portfolio-item-holder').outerHeight();
+	$('.portfolio-holder').height(portfolioItemHeight * 2);
+
+	$('.portfolio-more-button').click(function() {
+		$('.portfolio-holder').css('height','');
+		$('.portfolio-more-button').addClass('hidden');
+		$('.portfolio-less-button').removeClass('hidden');
+	});
+	$('.portfolio-less-button').click(function() {
+		$('.portfolio-holder').height(portfolioItemHeight * 2);
+		$('.portfolio-less-button').addClass('hidden');
+		$('.portfolio-more-button').removeClass('hidden');
+	});
+});
+
+$(window).resize(function() {
+	var portfolioItemHeight = $('.portfolio-item-holder').outerHeight();
+	$('.portfolio-holder').height(portfolioItemHeight * 2);
+
+	$('.portfolio-more-button').click(function() {
+		$('.portfolio-holder').css('height','');
+		$('.portfolio-more-button').addClass('hidden');
+		$('.portfolio-less-button').removeClass('hidden');
+	});
+	$('.portfolio-less-button').click(function() {
+		$('.portfolio-holder').height(portfolioItemHeight * 2);
+		$('.portfolio-less-button').addClass('hidden');
+		$('.portfolio-more-button').removeClass('hidden');
+	});	
 });

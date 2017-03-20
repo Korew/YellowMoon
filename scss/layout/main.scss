@@ -56,6 +56,9 @@ h1 {
 	&-description {
 		font-size: 15px;
 		margin-bottom: 120px;
+		@media screen and (max-width: 768px) {
+			margin-bottom: 30px;
+		}
 	}
 	&-header {
 		height: 1%;
@@ -125,7 +128,7 @@ h1 {
 	margin: 0 auto 56px;
 	@media screen and (max-width: 768px) {
 		margin-bottom: 30px;
-		}
+	}
 
 	img {
 		display: inline-block;
@@ -183,6 +186,115 @@ h1 {
 		display: table-cell;
 		vertical-align: middle;
 	}
+}
+
+.portfolio {
+	&-holder {
+		font-size: 0;
+		overflow: hidden;
+		margin-bottom: 30px;
+		transition: all .8s ease;
+	}
+
+	&-item {
+		width: 100%;
+		transform-style: preserve-3d;
+		transition: all 0.5s linear;
+		padding-bottom: 74%;
+
+		&-holder {
+			perspective: 1000;
+			position: relative;
+			z-index: 1;
+			box-sizing: border-box;
+			font-size: 1rem;
+			display: inline-block;
+			width: 25%;
+			@media screen and (max-width: 768px) {
+				width: 33.33%;
+			}
+			@media screen and (max-width: 480px) {
+				width: 50%;
+			}
+			padding: 10px;
+
+			&:hover .portfolio-item {
+				transform: rotateY(180deg);
+			}
+		}
+
+
+		&-front {
+			position: absolute;
+			backface-visibility: hidden;
+			width: 100%;
+			height: 0;
+			padding-bottom: 74%;
+			box-sizing: border-box;
+			overflow: hidden;
+
+			>img {
+				display: block;
+				width: 100%;
+				height: auto;
+			}
+
+		}
+
+		&-back {
+			position: absolute;
+			backface-visibility: hidden;
+			width: 100%;
+			height: 0;
+			padding-bottom: 74%;
+			box-sizing: border-box;
+			overflow: hidden;
+			transform: rotateY(180deg);
+			background-color: $bgyellow;
+			&-content {
+				text-align: center;
+				color: #131316;
+				font-size: 20px;
+				text-transform: uppercase;
+			}
+
+		}
+	}
+
+	&-more {
+
+		&-text {
+			margin-bottom: 30px;
+		}
+
+		&-button {
+			width: 38px;
+			margin: 0 auto;
+			img {
+				display: inline-block;
+				width: 100%;
+				height: auto;
+				cursor: pointer;
+			}
+		}
+
+	}
+
+	&-less-button {
+		width: 38px;
+		margin: 0 auto;
+		img {
+			transform: rotate(180deg);
+			display: inline-block;
+			width: 100%;
+			height: auto;
+			cursor: pointer;
+		}
+	}
+}
+
+.hidden {
+	display: none;
 }
 
 .clients-holder {
