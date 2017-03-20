@@ -35,6 +35,11 @@
 		display: inline-block;
 		width: 50%;
 		padding-right: 10px;
+		@media screen and (max-width: 480px) {
+			display: block;
+			width: 100%;
+			padding-right: 0;
+		}
 		margin-bottom: 20px;
 	}
 
@@ -43,6 +48,11 @@
 		display: inline-block;
 		width: 50%;
 		padding-left: 10px;
+		@media screen and (max-width: 480px) {
+			display: block;
+			width: 100%;
+			padding-left: 0;
+		}
 		margin-bottom: 20px;
 	}
 
@@ -61,11 +71,12 @@
 		font-size: 20px;
 		text-transform: uppercase;
 		cursor: pointer;
-		transition: 0.5s;
+		transition: 0.3s;
 
 		&:hover {
 			color: $textwhite;
-			transition: 0.5s;
+			background-color: $bggrey;
+			transition: 0.3s;
 		}
 	}
 }
