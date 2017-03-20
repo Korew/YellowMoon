@@ -5,11 +5,33 @@
 	p {
 		color: #ffe600;
 		font-size: 13px;
+		@media screen and (max-width: 768px) {
+			text-align: center;
+		}
 	}
 
 	.socialicons-holder {
 		float: right;
+		@media screen and (max-width: 768px) {
+			float: none;
+			text-align: center;
+			margin-bottom: 40px;
+		}
+		color: white;
 
+		a {
+			margin-right: 40px;
+			text-decoration: none;
+			color: $textwhite;
+
+			&:last-child {
+				margin: 0;
+			}
+
+			&:hover {
+				color: $textyellow;
+			}
+		}
 		
 	}
 }

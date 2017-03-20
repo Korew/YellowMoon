@@ -103,16 +103,16 @@ $(function () {
 });
 
 $(window).resize(function() {
-	var portfolioItemHeight = $('.portfolio-item-holder').outerHeight();
-	$('.portfolio-holder').height(portfolioItemHeight * 2);
+	var portfolioItemHolderHeight = $('.portfolio-item-holder').outerHeight() * 2;
+	$('.portfolio-holder').css({'height': 'portfolioItemHolderHeight'+'px'});
 
 	$('.portfolio-more-button').click(function() {
-		$('.portfolio-holder').css('height','');
+		$('.portfolio-holder').css({'height': ''});
 		$('.portfolio-more-button').addClass('hidden');
 		$('.portfolio-less-button').removeClass('hidden');
 	});
 	$('.portfolio-less-button').click(function() {
-		$('.portfolio-holder').height(portfolioItemHeight * 2);
+		$('.portfolio-holder').css({'height': 'portfolioItemHolderHeight'});
 		$('.portfolio-less-button').addClass('hidden');
 		$('.portfolio-more-button').removeClass('hidden');
 	});	
