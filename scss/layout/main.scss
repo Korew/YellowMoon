@@ -255,7 +255,11 @@ h1 {
 				text-align: center;
 				color: #131316;
 				font-size: 20px;
-				text-transform: uppercase;
+				text-transform: uppercase;	
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
 			}
 
 		}
